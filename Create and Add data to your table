@@ -39,7 +39,7 @@ INSERT INTO EmployeeSalary VALUES
 (1010, 'Regional Manager', 350000)
 
 
-/* SELECT STATEMENT                              /*These are commands you can execute below on the 2 tables we created*/
+/* SELECT STATEMENT                                                    /*These are commands you can execute below on the 2 tables we created*/
 *, Top -To extract up to a certain no of values from a table, 
 Distinct - To extract values from certain column in table, 
 Count - To give total count of data in a  table,    
@@ -59,5 +59,14 @@ FROM EmployeeSalary
 
 SELECT *
 FROM EmployeeDemographics
-WHERE Age > 21 AND Gender = 'Female'              /*This will output employee data with age > 21, Gender = female and last name starts with M*/
+WHERE Age > 21 AND Gender = 'Female'                       /*This will output employee data with age > 21, Gender = female and last name starts with M*/
 AND LastName LIKE 'M%'
+
+
+/* Group By, Order By                                     /*These commands will group and/or order data in the table according to set criteria*/
+*/
+
+SELECT Gender, Age, COUNT(Gender)
+FROM EmployeeDemographics
+GROUP BY Gender, Age
+ORDER BY COUNT(Gender)
