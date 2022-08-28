@@ -1,6 +1,6 @@
 CREATE TABLE EmployeeDemographics
 (EmployeeID int,
-FirstName varchar(50),   /* Created a table titled "EmployeeDemographics, specified the column titles data and data type for column data" */
+FirstName varchar(50),                           /* Created a table titled "EmployeeDemographics, specified the column titles data and data type for column data" */
 LastName varchar(50),
 Age int,
 Gender varchar(50)
@@ -8,7 +8,7 @@ Gender varchar(50)
 
 
 CREATE TABLE EmployeeSalary
-(EmployeeID int,           /* We created a table titled "EmployeeSalary, specified the column titles data and data type for column data" */
+(EmployeeID int,                                 /* We created a table titled "EmployeeSalary, specified the column titles data and data type for column data" */
 JobTitle varchar(50),      
 Salary int)
 
@@ -18,8 +18,8 @@ INSERT INTO EmployeeDemographics VALUES
 (1002, 'Tayra', 'Mendoza', 21, 'Female'),
 (1003, 'Hillary', 'Boon', 27, 'Male'),
 (1004, 'Don', 'Fit', 29, 'Male'),
-(1005, 'Abby', 'Machuma', 21, 'Female'),        /*We inserted values into the table titled "EmployeeDemographics" */
-(1006, 'Tamil', 'Manila', 25, 'Female'),
+(1005, 'Abby', 'Machuma', 21, 'Female'),         /*We inserted values into the table titled "EmployeeDemographics" */
+(1006, 'Tamil', 'Manila', 25, 'Female'), 
 (1007, 'Zedicus', 'Medira', 36, 'Male'),
 (1008, 'Winnie', 'Nafula', 27, 'Female'),
 (1009, 'Zahra', 'Mohammed', 23, 'Female'),
@@ -29,7 +29,7 @@ INSERT INTO EmployeeDemographics VALUES
 INSERT INTO EmployeeSalary VALUES
 (1001, 'Data Analyst', 235000),
 (1002, 'Interior Architect', 97000),
-(1003, 'Construction Manager', 120000),         /*We Inserted Values into the table titled "Employee Salary"*/
+(1003, 'Construction Manager', 120000),          /*We Inserted Values into the table titled "Employee Salary"*/
 (1004, 'Creative Lead', 198000),
 (1005, 'Salesman', 78000),
 (1006, 'Developer', 156000),
@@ -39,10 +39,10 @@ INSERT INTO EmployeeSalary VALUES
 (1010, 'Regional Manager', 350000)
 
 
-/* SELECT STATEMENT
+/* SELECT STATEMENT                              /*These are commands you can execute below on the 2 tables we created*/
 *, Top -To extract up to a certain no of values from a table, 
 Distinct - To extract values from certain column in table, 
-Count - To give total count of data in a  table,    /*These are commands you can execute below on the 2 tables we created*/
+Count - To give total count of data in a  table,    
 As,
 Max - To extract maximum values from table,
 Min - To Extract minimum values from table, 
@@ -59,5 +59,5 @@ FROM EmployeeSalary
 
 SELECT *
 FROM EmployeeDemographics
-WHERE Age > 21 AND Gender = 'Female' /*This will output employee data with age > 21, Gender = female and last name starts with M*/
+WHERE Age > 21 AND Gender = 'Female'              /*This will output employee data with age > 21, Gender = female and last name starts with M*/
 AND LastName LIKE 'M%'
