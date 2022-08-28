@@ -57,3 +57,7 @@ SELECT Avg(Salary)
 FROM EmployeeSalary
 
 
+SELECT *
+FROM EmployeeDemographics
+WHERE Age > 21 AND Gender = 'Female' /*This will output employee data with age > 21, Gender = female and last name starts with M*/
+AND LastName LIKE 'M%'
